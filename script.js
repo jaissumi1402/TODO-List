@@ -1,9 +1,5 @@
 
-function formClear() {
-$("#title").val("");
-$("#description").val("");
 
-}
 function getAndUpdate(){
     console.log("Updating List...");
     tit = document.getElementById('title').value;
@@ -22,6 +18,11 @@ function getAndUpdate(){
         localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
     }
     update();
+}
+function formClear() {
+    $("#title").val("");
+    $("#description").val("");
+
 }
 
 function update(){
