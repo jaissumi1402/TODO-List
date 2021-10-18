@@ -1,7 +1,7 @@
 
 
 function getAndUpdate(){
-    console.log("Updating List...");
+    
     tit = document.getElementById('title').value;
     desc = document.getElementById('description').value;
     if (localStorage.getItem('itemsJson')==null){
